@@ -17,6 +17,8 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         # she notices "to-do" mentioned in the title header
+        print('the current title is ' + self.browser.title)
+        time.sleep(3)
         self.assertIn('To-Do',self.browser.title)
         #self.fail('finish the test')
 
